@@ -20,4 +20,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/', include(('apps.authentication.urls',
                              'apps.authentication'), namespace='authentication')),
+    path('api/v1/', include(('apps.property.urls',
+                             'apps.property'), namespace='property')),
 ]
